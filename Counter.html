@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+    <HEAD>
+        <TITLE>COUNT</TITLE>
+        <script src="Js/jquery.min.js"></script>
+    </HEAD>
+    <BODY>
+        <CENTER>
+            <form>
+                <input type="text" name="counter" id="counter" value="0" readonly></input>
+                <input type="button" name="counterAction" id="counterAction" value="Count"></input>
+            </form>
+        </CENTER>
+    </BODY>
+    <script type="text/javascript">
+           $(document).ready(function() {
+               var count = 0;
+                $('#counterAction').click(function() {
+                    count ++;
+                    $('#counter').val(count);
+                });
+            });
+    </script>
+</HTML>
